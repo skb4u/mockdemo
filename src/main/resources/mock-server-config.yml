@@ -1,0 +1,12 @@
+httpEndpointConfigurations:
+-  method: GET
+   urlPattern: /test
+   requestHeaders:
+     content-type: application/json
+     test: mustBeThere
+   responseHeaders:
+      content-type: application/json
+   responseFileName: 500-MockResponse.json
+   testParameters:
+      - strictmatch:true
+      #- payloadmatch:true
